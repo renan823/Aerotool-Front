@@ -38,6 +38,29 @@ Tecnologias utilizadas no desenvolvimento do projeto.
 - Figma
 - Tailwind CSS (Styling)
 
+# **Inicialização do projeto**
+
+O software foi desenvolvido utilizando o gerenciador de paoctes NPM juntamenta ao framework
+Next.js. A seguinte lista de ações deve ser executada em um terminal dentro do diretório (pasta) do projeto.
+
+- Inicializar o projeto: 
+    ```bash
+        npm start
+    ```
+- Inicializar o projeto (modo desenvolvedor): 
+    ```bash
+        npm run dev
+    ```
+- Realizar a build do projeto: 
+    ```bash
+        npm run build
+    ```
+- Utilizar comando Lint: 
+    ```bash
+        npm run lint
+    ```
+
+
 # **Equipe de Desenvolvimento**
 
 Seguem abaixo os desenvolvedores do software Aerotool:
