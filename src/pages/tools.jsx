@@ -1,3 +1,6 @@
+import { Plus } from "@phosphor-icons/react";
+import Link from "next/link";
+
 const Tools = () => {
     return (
         <div className="flex w-full p-4">
