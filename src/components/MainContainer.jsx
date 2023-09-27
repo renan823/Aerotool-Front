@@ -2,10 +2,10 @@ import Navbar from '@/components/Navbar';
 
 const MainContainer = ({ children }) => {
     return (
-        <>
+        <div className='flex-row'>
             <Navbar/>
             { children }
-        </>
+        </div>
     )
 }
 
