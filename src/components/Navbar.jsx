@@ -1,10 +1,6 @@
 import Link from 'next/link';
 import { User, Gear, PaperPlaneTilt, Wrench, Bell, SquaresFour } from '@phosphor-icons/react';
 
-const NavbarItem = (props) => {
-    
-}
-
 const Navbar = (props) => {
 
     return (

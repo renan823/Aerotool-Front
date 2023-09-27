@@ -1,6 +1,10 @@
+import RequestCard from "@/components/RequestCard";
+
 const Profile = () => {
     return (
-       <h1>Profile page</h1>
+        <div className="bg-teal-500">
+            <RequestCard name="Kit parafuso" description="Uns parafusos aí" amount={10} situation={2}/>
+        </div>
     )
 }
 

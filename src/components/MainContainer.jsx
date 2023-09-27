@@ -2,7 +2,7 @@ import Navbar from '@/components/Navbar';
 
 const MainContainer = ({ children }) => {
     return (
-        <div className='flex-row'>
+        <div className='flex lex-row'>
             <Navbar/>
             { children }
         </div>
