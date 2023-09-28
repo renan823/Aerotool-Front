@@ -13,12 +13,14 @@ const Dashboard = () => {
             setIsShowView={setIsShowView}
             bgColor="bg-gradient-to-r from-accent to-primary rounded-md"
             buttonText={"VISÃO GERAL"}
+            isSelected={true}
           />
           <NavButtons
             isShowView={isShowView}
             setIsShowView={setIsShowView}
             bgColor="text-primary border-b-2 border-primary"
             buttonText={"DASHBOARD"}
+            isSelected={false}
           />
         </div>
         <h1>Show View</h1>
@@ -33,12 +35,14 @@ const Dashboard = () => {
             setIsShowView={setIsShowView}
             bgColor="text-primary border-b-2 border-primary"
             buttonText={"VISÃO GERAL"}
+            isSelected={false}
           />
           <NavButtons
             isShowView={isShowView}
             setIsShowView={setIsShowView}
             bgColor="bg-gradient-to-r from-accent to-primary rounded-md"
             buttonText={"DASHBOARD"}
+            isSelected={true}
           />
         </div>
         <h1>Dashboard</h1>

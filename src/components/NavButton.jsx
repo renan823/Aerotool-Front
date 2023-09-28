@@ -1,9 +1,29 @@
-const NavButtons = ({ isShowView, setIsShowView, bgColor, buttonText }) => {
-    const style = `${bgColor} p-2 text-white m-2 text-lg font-semibold `
+const NavButtons = ({
+  isShowView,
+  setIsShowView,
+  bgColor,
+  buttonText,
+  isSelected,
+}) => {
+  let style = `${bgColor} p-2 text-white m-2 text-lg font-semibold `;
+  if (isSelected) {
     return (
-    <div>
-        <span className={style} onClick={() => setIsShowView(!isShowView)}>{buttonText}</span>
-    </div>)
-}
+      <div>
+        <span className={style} onClick={() => {}}>
+          {buttonText}
+        </span>
+      </div>
+    );
+  } else {
+    style = `${bgColor} p-2 text-primary m-2 text-lg font-semibold`
+    return (
+      <div>
+        <span className={style} onClick={() => setIsShowView(!isShowView)}>
+          {buttonText}
+        </span>
+      </div>
+    );
+  }
+};
 
 export default NavButtons;
