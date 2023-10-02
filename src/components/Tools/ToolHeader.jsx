@@ -11,9 +11,9 @@ const ToolFilter = ({ icons }) => {
 const ToolHeader = () => {
   const iconSize = 24;
   const icons = [
-    <Icon.Hash color="#9ca3af" size={iconSize}/>,
-    <Icon.TextT color="#9ca3af" size={iconSize} />,
-    <Icon.Wrench color="#9ca3af" size={iconSize} />,
+    <Icon.Hash color="#9ca3af" size={iconSize} key={1}/>,
+    <Icon.TextT color="#9ca3af" size={iconSize} key={2} />,
+    <Icon.Wrench color="#9ca3af" size={iconSize} key={3} />,
   ];
 
   return (
@@ -27,7 +27,6 @@ const ToolHeader = () => {
             className="text-gray-600 outline-none border-none w-full p-2 text-md bg-gray-100 font-semibold"
           />
         </div>
-        <ToolFilter icons={icons} />
       </div>
       <h1 className="p-2 text-primary font-semibold text-lg uppercase mt-4">
         Ferramentas Cadastradas
