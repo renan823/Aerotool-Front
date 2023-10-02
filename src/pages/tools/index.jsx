@@ -7,13 +7,13 @@ import ToolHeader from "@/components/Tools/ToolHeader";
 const Tools = () => {
   const [tools, setTools] = useState([
     {
-      name: "Chave de Cu de Curioso",
+      name: "Lista de quem perguntou",
     },
     {
-      name: "Rebimboca da Parafuseta",
+      name: "Chave de quem te perguntou",
     },
     {
-      name: "Rosqueta da Porqueta",
+      name: "DJIWAHIWAH, O que? Som de peido*",
     },
   ]);
 
@@ -24,7 +24,7 @@ const Tools = () => {
           Ferramentas
         </h2>
         <Link
-          href="/"
+          href="/tools/save"
           className="flex flex-row rounded-md justify-center items-center gap-x-4 bg-gradient-to-r from-accent to-primary p-4 px-6 text-white"
         >
           <span className="text-lg uppercase font-semibold">
