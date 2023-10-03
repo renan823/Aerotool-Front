@@ -2,9 +2,8 @@ import * as Icon from "@phosphor-icons/react";
 import { useState } from "react";
 
 const ToolFilter = ({ icons }) => {
-  const selectedStyle = "flex bg-gray-100 text-primary p-4 rounded-lg";
-  return icons.map((icon) => {
-    return <div className="flex bg-gray-100 p-4 rounded-lg">{icon}</div>;
+  return icons.map((icon, i) => {
+    return <div className="flex bg-gray-100 p-4 rounded-lg" key={i}>{icon}</div>;
   });
 };
 
