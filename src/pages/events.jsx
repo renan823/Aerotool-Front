@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { User, Bell, Gear } from "@phosphor-icons/react";
+import { motion } from "framer-motion";
 import EventCard from "@/components/EventCard";
 
 const Page = ({ page }) => {
@@ -24,24 +25,33 @@ const Page = ({ page }) => {
   }
 };
 
-const EventHeaderItem = ({ isSelected, icon, setPage, title }) => {
+const EventHeaderItem = ({ isSelected, icon, setPage, title, name }) => {
+  const handleChangePage = (target) => {
+    console.log(target);
+    setPage(target);
+  };
 
   return isSelected ? (
-    <div className="mr-6 p-1 flex flex-row items-center">
+    <motion.div
+      initial={{ scale: .9, opacity: .6 }}
+      animate={{ scale: 1, opacity: 1 }}
+      transition={{ duration: 0.4 }}
+      className="mr-6 p-2 flex flex-row items-center border-b-4 border-primary"
+    >
       {icon}
       <button
         className="mx-2 text-lg text-primary font-semibold uppercase"
-        onClick={() => setPage("notification")}
+        onClick={() => handleChangePage(name)}
       >
         {title}
       </button>
-    </div>
+    </motion.div>
   ) : (
-    <div className="mr-6 p-1 flex flex-row items-center">
+    <div className="mr-6 p-2 flex flex-row items-center">
       {icon}
       <button
         className="mx-2 text-lg text-primary font-semibold uppercase"
-        onClick={() => setPage("notification")}
+        onClick={() => handleChangePage(name)}
       >
         {title}
       </button>
@@ -78,6 +88,7 @@ const EventHeader = ({ page, setPage }) => {
             isSelected={true}
             setPage={setPage}
             title={option.text}
+            name={option.name}
           />
         ) : (
           <EventHeaderItem
@@ -86,6 +97,7 @@ const EventHeader = ({ page, setPage }) => {
             isSelected={false}
             setPage={setPage}
             title={option.text}
+            name={option.name}
           />
         )
       )}
@@ -95,7 +107,6 @@ const EventHeader = ({ page, setPage }) => {
 
 const Events = () => {
   const [page, setPage] = useState("notification"); // notification or user or system
-  console.log(page);
 
   return (
     <div className="flex flex-col w-full p-4 ">

@@ -1,6 +1,8 @@
 import Link from "next/link";
 import React from "react";
 import * as Icon from "@phosphor-icons/react"
+import ToolForm from "@/components/Tools/Register/ToolForm";
+import ToolItemForm from "@/components/Tools/Register/ToolItemForm";
 
 const CreateTool = () => {
   return (
@@ -16,6 +18,11 @@ const CreateTool = () => {
           <Icon.ArrowLeft size={24} weight="bold" />
         </Link>
       </nav>
+
+      <div>
+        <ToolForm />
+        <ToolItemForm />
+      </div>
     </div>
   );
 };
