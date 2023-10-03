@@ -1,4 +1,4 @@
-import RequestCard from "@/components/RequestCard";
+import RequestCard from "@/components/Requests/RequestCard";
 
 const Profile = () => {
     return (

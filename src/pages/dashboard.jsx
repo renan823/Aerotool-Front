@@ -1,7 +1,7 @@
 import NavButtons from "@/components/NavButton";
 import { useState } from "react";
 import { Plus } from "@phosphor-icons/react";
-import AddRequest from "@/components/AddRequest";
+import AddRequest from "@/components/Requests/Register/AddRequest";
 import ShowView from "@/components/ShowView";
 
 const Dashboard = () => {

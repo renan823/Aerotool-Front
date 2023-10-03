@@ -12,6 +12,7 @@ const ClosestRequest = () => {
                     text-white 
                     font-semibold
                     w-fit
+                    h-full
                     items-center"
       >
         <div className="flex flex-col gap-3">
@@ -20,10 +21,12 @@ const ClosestRequest = () => {
           <div>Data de entrega: 12/02/2023</div>
         </div>
         <div className="text-center flex flex-col gap-2 ">
-            <div>Status:</div>
-            <div className="flex flex-row gap-1 p-2 bg-gradient-to-r to-warn from-warnAccent rounded-md text-white">Em aberto</div>
+          <div>Status:</div>
+          <div className="flex flex-row gap-1 p-2 bg-gradient-to-r to-warn from-warnAccent rounded-md text-white">
+            Em aberto
+          </div>
         </div>
-        <ArrowCircleRight size={50}/>
+        <ArrowCircleRight size={50} />
       </div>
     </div>
   );
