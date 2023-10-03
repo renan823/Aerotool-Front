@@ -2,7 +2,9 @@ import React from 'react'
 
 const ToolForm = () => {
   return (
-    <div>ToolForm</div>
+    <div>
+      
+    </div>
   )
 }
 

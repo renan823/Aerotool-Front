@@ -7,13 +7,52 @@ import ToolHeader from "@/components/Tools/ToolHeader";
 const Tools = () => {
   const [tools, setTools] = useState([
     {
-      name: "Lista de quem perguntou",
+      id: "1",
+      name: "Martelos",
+      description: "Martelos de todos os tipos",
+      type: "PROPERTY",
+      toolItem: {
+        id: "1",
+        patrimony: "00000001A",
+        locate: {
+          id: "1",
+          name: "Sala 1",
+          description: "Sala 1 do Hangar",
+        },
+        situation: "FREE",
+      }
     },
     {
-      name: "Chave de quem te perguntou",
+      id: "2",
+      name: "Chaves de fenda",
+      description: "Chaves de fenda de todos os tipos",
+      type: "PROPERTY",
+      toolItem: {
+        id: "2",
+        patrimony: "00000001B",
+        locate: {
+          id: "1",
+          name: "Sala 1",
+          description: "Sala 1 do Hangar",
+        },
+        situation: "FREE",
+      }
     },
     {
-      name: "DJIWAHIWAH, O que? Som de peido*",
+      id: "3",
+      name: "Chaves de boca",
+      description: "Chaves de boca de todos os tipos",
+      type: "PROPERTY",
+      toolItem: {
+        id: "3",
+        patrimony: "00000001C",
+        locate: {
+          id: "1",
+          name: "Sala 2",
+          description: "Sala 2 do Hangar",
+        },
+        situation: "BUSY",
+      }
     },
   ]);
 
