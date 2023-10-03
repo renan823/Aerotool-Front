@@ -2,6 +2,7 @@ import Link from "next/link";
 import * as Icon from "@phosphor-icons/react";
 import React, { useState } from "react";
 import { useRouter } from "next/router";
+import { motion } from "framer-motion";
 
 const NavbarList = ({ routes }) => {
   const currentRoute = useRouter();
@@ -9,9 +10,18 @@ const NavbarList = ({ routes }) => {
   return routes.map((route, index) => (
     <Link href={route.to} key={index}>
       {currentRoute.pathname.includes(route.to) ? (
-        <div className="bg-primary p-3 text-white flex justify-center items-center rounded-lg">
+        <motion.div
+          initial={{opacity: .3, scale: .8}}
+          whileHover={{ scale: 1.1 }}
+          animate={{
+            scale: 1,
+            opacity: 1
+          }}
+          transition={{ duration: 0.3 }}
+          className="bg-primary p-3 text-white flex justify-center items-center rounded-lg"
+        >
           {React.cloneElement(route.icon, { color: "white" })}
-        </div>
+        </motion.div>
       ) : (
         <div className="text-primary">{route.icon}</div>
       )}

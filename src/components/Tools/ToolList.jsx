@@ -12,8 +12,8 @@ const ToolListItem = ({ tool }) => {
 };
 
 const ToolList = ({ tools }) => {
-  return tools.map((tool) => {
-    return <ToolListItem tool={tool} />;
+  return tools.map((tool, i) => {
+    return <ToolListItem tool={tool} key={i}/>;
   });
 };
 
