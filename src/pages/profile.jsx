@@ -1,9 +1,10 @@
 import RequestCard from "@/components/Requests/RequestCard";
+import ToolForm from "@/components/Tools/Register/ToolForm";
 
 const Profile = () => {
     return (
-        <div className="bg-teal-500">
-            <RequestCard name="Kit parafuso" description="Uns parafusos aí" amount={10} situation={2}/>
+        <div className="w-full p-5">
+            <ToolForm/>
         </div>
     )
 }
