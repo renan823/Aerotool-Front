@@ -51,7 +51,7 @@ const Navbar = (props) => {
   ]);
 
   return (
-    <div className="border-r-4 shadow-lg flex flex-col p-2 justify-around w-fit h-screen items-center">
+    <div className="border-r-4 shadow-lg sm:flex flex-col p-2 justify-around h-screen items-center hidden">
       <div className="p-3">
         <Link href="/profile">
           <Icon.User color="#4E54DA" size={24} weight="fill" />

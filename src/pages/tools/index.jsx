@@ -19,7 +19,7 @@ const Tools = () => {
           name: "Sala 1",
           description: "Sala 1 do Hangar",
         },
-        situation: "FREE",
+        situation: "Livre para Uso",
       }
     },
     {
@@ -35,7 +35,7 @@ const Tools = () => {
           name: "Sala 1",
           description: "Sala 1 do Hangar",
         },
-        situation: "FREE",
+        situation: "Livre para Uso",
       }
     },
     {
@@ -51,7 +51,7 @@ const Tools = () => {
           name: "Sala 2",
           description: "Sala 2 do Hangar",
         },
-        situation: "BUSY",
+        situation: "Em uso",
       }
     },
   ]);
@@ -64,7 +64,7 @@ const Tools = () => {
         </h2>
         <Link
           href="/tools/save"
-          className="flex flex-row rounded-md justify-center items-center gap-x-4 bg-gradient-to-r from-accent to-primary p-4 px-6 text-white"
+          className="sm:flex flex-row rounded-md justify-center items-center gap-x-4 bg-gradient-to-r from-accent to-primary p-4 px-6 text-white hidden"
         >
           <span className="text-lg uppercase font-semibold">
             Nova Ferramenta
@@ -73,9 +73,9 @@ const Tools = () => {
         </Link>
       </nav>
 
-      <div>
+      <div className="flex items-start justify-center flex-col">
         <ToolHeader />
-        <div className="flex px-4 mx-2">
+        <div className="flex lg:flex-row flex-col px-4 mx-2 items-start justify-start gap-6">
           <ToolList tools={tools} />
         </div>
       </div>

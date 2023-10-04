@@ -33,19 +33,26 @@ const ToolListItemDetails = ({ tool }) => {
 const ToolListItem = ({ tool }) => {
   const [showDetails, setShowDetails] = useState(false);
 
+  const height = showDetails ? "h-full" : "h-fit";
   return (
-    <div className="flex flex-col bg-gradient-to-br from-accent to-primary w-fit p-4 text-white rounded-lg mx-4 items-center h-fit">
+    <div
+      className={`flex flex-col bg-gradient-to-br from-accent to-primary lg:w-1/2 p-4 text-white rounded-lg mx-4 items-center justify-between ${height} w-full`}
+    >
       <div className="flex flex-col p-2 justify-center items-center">
         <div className="flex flex-row justify-center items-center p-2 gap-x-2">
           <Icon.Wrench color="#FFF" size={24} weight="bold" />
-          <h1 className="text-xl font-semibold uppercase">{tool.name}</h1>
+          <h1 className="text-xl font-semibold uppercase text-center">
+            {tool.name}
+          </h1>
         </div>
-        <h2 className="text-md font-semibold opacity-70">{tool.description}</h2>
+        <h2 className="text-md font-semibold opacity-70 text-center">
+          {tool.description}
+        </h2>
       </div>
       {showDetails ? (
         <div>
           <div className="flex justify-center flex-col items-center mt-4">
-            <h2 className="text-md font-semibold uppercase opacity-80">
+            <h2 className="text-md font-semibold uppercase opacity-80 text-center">
               Mostrar Menos
             </h2>
             <Icon.CaretUp
