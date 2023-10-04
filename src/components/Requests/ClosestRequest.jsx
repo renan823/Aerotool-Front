@@ -11,7 +11,7 @@ const ClosestRequest = () => {
                     bg-gradient-to-r from-accent to-primary rounded-md 
                     text-white 
                     font-semibold
-                    w-fit
+                    w-full
                     h-full
                     items-center"
       >

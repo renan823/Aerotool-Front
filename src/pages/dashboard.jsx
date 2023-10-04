@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Plus } from "@phosphor-icons/react";
 import AddRequest from "@/components/Requests/Register/AddRequest";
 import ShowView from "@/components/ShowView";
+import DashboardContent from "@/components/Dashboard/DashboardContent";
 
 const Dashboard = () => {
   const [isShowView, setIsShowView] = useState(true);
@@ -34,8 +35,8 @@ const Dashboard = () => {
     );
   } else {
     return (
-      <div className="p-10 w-full">
-        <div className="flex flex-row my-5 justify-between items-center">
+      <div className="p-4 w-full">
+        <div className="flex flex-row my-5 justify-between border-b-2 border-gray-200 p-4">
           <div className="flex flex-row gap-3 p-2">
             <NavButtons
               isShowView={isShowView}
@@ -53,7 +54,7 @@ const Dashboard = () => {
             />
           </div>
         </div>
-        <h1>Dashboard</h1>
+        <DashboardContent />
       </div>
     );
   }
